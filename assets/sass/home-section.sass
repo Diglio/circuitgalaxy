@@ -8,30 +8,21 @@
   .imageGap
     margin-bottom: 50px
 
-  // .image1
-  //   background:
-  //     image: url(assets/img/image1.jpeg)
-  //     size: contain
-  //     repeat: no-repeat
-  //   width: 100%
-  //   height: 100%
-  //
-  // .image2
-  //   background:
-  //     image: url(assets/img/image2.jpeg)
-  //     size: contain
-  //     repeat: no-repeat
-  //   width: 100%
-  //   height: 100%
-  //
-  // .image3
-  //   background:
-  //     image: url(assets/img/image3.jpeg)
-  //     size: contain
-  //     repeat: no-repeat
-  //   width: 100%
-  //   height: 100%
-
   img
-    width: 50%
-    height: auto
+    width: 650px
+
+@media screen and (max-width: 990px)
+  .home-section
+    img
+      width: 450px
+@media screen and (max-width: 805px)
+  .home-section
+    img
+      width: 350px
+
+@media screen and (max-width: 715px)
+  .home-section
+    margin-top: 100px
+    margin-left: 0
+    justify-content: center
+    align-items: center

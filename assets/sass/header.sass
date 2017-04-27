@@ -1,3 +1,120 @@
+//Mobile Header + Menubar
+.mobileHeader
+  display: none
+  flex-direction: row
+  position: fixed
+  height: 100px
+  width: 100%
+  top: 0
+  align-items: center
+  z-index: 100
+  background-color: white
+  justify-content: flex-end
+
+  .logo
+    background:
+      image: url(assets/img/logo.jpeg)
+      size: contain
+      repeat: no-repeat
+    width: 115px
+    height: 100%
+    position: absolute
+    left: 5px
+    top: 15px
+
+  //dropdown Menu for Mobile Responsiveness
+  .hamburger
+    width: 60px
+    height: 45px
+    margin-right: 20px
+    transform: rotate(0deg)
+    transition: all 500ms ease-in-out
+    cursor: pointer
+
+    span
+      display: block
+      position: absolute
+      height: 8px
+      width: 100%
+      background-color: #2ac62f
+      border-radius: 8px
+      opacity: 1
+      left: 0
+      transform: rotate(0deg)
+      transition: all 250ms ease-in-out
+
+    span:nth-child(1)
+      top: 0px
+      transform-origin: left center
+
+    span:nth-child(2)
+      top: 18px
+      transform-origin: left center
+
+    span:nth-child(3)
+      top: 36px
+      transform-origin: left center
+
+    &.open
+      span:nth-child(1)
+        transform: rotate(45deg)
+        top: -3px
+        left: 8px
+      span:nth-child(2)
+        width: 0%
+        opacity: 0
+      span:nth-child(3)
+        transform: rotate(-45deg)
+        top: 39px
+        left: 8px
+
+  .mobile-nav
+    opacity: 0
+    transform: translateX(200px)
+    transition: all 250ms ease-in-out
+    ul
+      padding: 0
+      margin: 0
+      display: block
+      list-style: none
+      li
+        font-family: "Helvetica", arial, sans-serif
+        font-size: 12px
+        font-weight: bold
+        text-decoration: none
+        transition: all 250ms ease-in-out
+        a
+          color: #bbb
+          text-decoration: none
+
+    .active
+      font-weight: bold
+      color: #2ac62f !important
+
+    &.open
+      display: block
+      opacity: 1
+      transform: translateX(0)
+      ul
+        padding: 0
+        margin: 0
+        display: block
+        list-style: none
+        li
+          font-family: "Helvetica", arial, sans-serif
+          font-size: 12px
+          font-weight: bold
+          text-decoration: none
+          padding: 10px 0
+          a
+            color: #bbb
+            text-decoration: none
+
+      .active
+        font-weight: bold
+        color: #2ac62f !important
+
+//Main header for desktop display
 header
   display: flex
   flex-direction: column
@@ -58,18 +175,6 @@ header
           &:hover
             color: black
 
-      // .circuit1
-      //   font-weight: bold
-      //   font-size: 20px
-      //   text-decoration: none
-      //   color: #2ac62f
-
-      // .tales
-      //   font-size: 12px
-      //   font-weight: bold
-      //   color: #bbb
-      //   text-decoration: none
-
   .socialContainer
     display: flex
     width: 100%
@@ -111,3 +216,10 @@ header
     font-size: 20px
     text-decoration: none
     color: #2ac62f !important
+
+//Media Queries
+@media screen and (max-width: 715px)
+  header
+    display: none
+  .mobileHeader
+    display: flex
