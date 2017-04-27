@@ -1,0 +1,106 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 280px;
+  text-align: center; }
+  header .logo {
+    background-image: url(/assets/img/logo.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 160px;
+    height: 90px; }
+  header .tagLineContainer {
+    line-height: .5em;
+    color: #aaa; }
+    header .tagLineContainer p {
+      font-size: 14px; }
+    header .tagLineContainer a {
+      text-decoration: none;
+      color: #aaa; }
+  header .comicNav {
+    text-align: left;
+    width: 100%; }
+    header .comicNav ul {
+      list-style: none;
+      margin: 30px 0 0 0;
+      padding: 0; }
+      header .comicNav ul li {
+        margin-bottom: 20px;
+        font-family: "Helvetica", arial, sans-serif; }
+      header .comicNav ul .circuit1 {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+        color: #2ac62f; }
+      header .comicNav ul .tales {
+        margin-bottom: 10px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #bbb;
+        text-decoration: none; }
+  header .socialContainer {
+    display: flex;
+    width: 100%; }
+    header .socialContainer .twitter {
+      background-image: url(/assets/img/twitter.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 20px; }
+    header .socialContainer .tumblr {
+      background-image: url(/assets/img/tumblr.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 20px; }
+    header .socialContainer .instagram {
+      background-image: url(/assets/img/instagram.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%; }
+
+.home-section {
+  height: 2700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 280px; }
+  .home-section .imageGap {
+    margin-bottom: 50px; }
+  .home-section .image1 {
+    background-image: url(/assets/img/image1.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; }
+  .home-section .image2 {
+    background-image: url(/assets/img/image2.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; }
+  .home-section .image3 {
+    background-image: url(/assets/img/image3.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%; }
+
+html body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
