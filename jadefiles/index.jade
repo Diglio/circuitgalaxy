@@ -8,24 +8,43 @@ head
   
 body
   header
-    .logo
+    a(href="#home").logo
     .tagLineContainer
       p.tagLine Comics and Illustrations by Zach Zuffante
       a(href="mailto:zach.zuffante@gmail.com").contactEmail zach.zuffante@gmail.com
     
     nav.comicNav
+      h3 Choose Your Chapter <hr>
       ul
-        li: a(href="#circuit1").circuit1 Circuit 1: Encounter
-        li: a(href="#tales1").tales Tales of lji 1 - 2
-        li: a(href="#tales3").tales Tales of lji 3
+        li: a(href="#circuit1").active Circuit 1: Encounter
+        li: a(href="#tales1") Tales of lji 1 - 2
+        li: a(href="#tales3") Tales of lji 3
     
-    .socialContainer
-      a(href="https://twitter.com/zachzuffante" target="_blank").twitter
-      a(href="http://plutonium.tumblr.com" target="_blank").tumblr
-      a(href="https://instagram.com/plutonium_art_lab" target="_blank").instagram
+      .socialContainer
+        a(href="https://twitter.com/zachzuffante" target="_blank").twitter.socialIcon
+        a(href="http://plutonium.tumblr.com" target="_blank").tumblr.socialIcon
+        a(href="https://instagram.com/plutonium_art_lab" target="_blank").instagram.socialIcon
   
   .home-section
-    .image1.imageGap
-    .image2.imageGap
-    .image3.imageGap
-        
+    //- .image1.imageGap
+    //- .image2.imageGap
+    //- .image3.imageGap
+    img(src="assets/img/image1.jpeg").imageGap
+    img(src="assets/img/image2.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    img(src="assets/img/image3.jpeg").imageGap
+    
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous")
+  script(src="assets/js/functions-min.js")

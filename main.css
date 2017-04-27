@@ -24,26 +24,34 @@ header {
       color: #aaa; }
   header .comicNav {
     text-align: left;
-    width: 100%; }
+    width: 100%;
+    position: relative;
+    top: 20px; }
+    header .comicNav hr {
+      position: absolute;
+      height: 2px;
+      border: 0;
+      background: black;
+      width: 60%;
+      background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black)); }
+    header .comicNav h3 {
+      margin-top: 30px;
+      margin-left: 30px; }
     header .comicNav ul {
       list-style: none;
       margin: 30px 0 0 0;
       padding: 0; }
       header .comicNav ul li {
         margin-bottom: 20px;
-        font-family: "Helvetica", arial, sans-serif; }
-      header .comicNav ul .circuit1 {
-        margin-bottom: 20px;
-        font-weight: bold;
-        font-size: 20px;
-        text-decoration: none;
-        color: #2ac62f; }
-      header .comicNav ul .tales {
-        margin-bottom: 10px;
+        font-family: "Helvetica", arial, sans-serif;
         font-size: 12px;
         font-weight: bold;
-        color: #bbb;
         text-decoration: none; }
+        header .comicNav ul li a {
+          text-decoration: none;
+          color: #bbb; }
+          header .comicNav ul li a:hover {
+            color: black; }
   header .socialContainer {
     display: flex;
     width: 100%; }
@@ -52,53 +60,42 @@ header {
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
       margin-right: 20px; }
     header .socialContainer .tumblr {
       background-image: url(assets/img/tumblr.png);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
       margin-right: 20px; }
     header .socialContainer .instagram {
       background-image: url(assets/img/instagram.png);
       background-size: contain;
       background-position: center;
-      background-repeat: no-repeat;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%; }
+      background-repeat: no-repeat; }
+    header .socialContainer .socialIcon {
+      height: 60px;
+      width: 60px;
+      transition: all 500ms ease-in-out;
+      transform: scale(1); }
+      header .socialContainer .socialIcon:hover {
+        transform: scale(1.2); }
+  header .active {
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #2ac62f !important; }
 
 .home-section {
-  height: 2700px;
+  height: auto;
+  min-width: 50%;
   display: flex;
   flex-direction: column;
-  margin-left: 280px; }
+  margin-left: 350px; }
   .home-section .imageGap {
     margin-bottom: 50px; }
-  .home-section .image1 {
-    background-image: url(assets/img/image1.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%; }
-  .home-section .image2 {
-    background-image: url(assets/img/image2.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%; }
-  .home-section .image3 {
-    background-image: url(assets/img/image3.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%; }
+  .home-section img {
+    width: 50%;
+    height: auto; }
 
 html body {
   margin: 0;
