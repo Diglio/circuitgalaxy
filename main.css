@@ -1,7 +1,7 @@
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   position: absolute;
   top: 30px;
   left: 30px;
@@ -11,9 +11,10 @@ header {
     background-image: url(assets/img/logo.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
     width: 160px;
-    height: 90px; }
+    height: 90px;
+    align-self: center;
+    margin-right: 40px; }
   header .tagLineContainer {
     line-height: .5em;
     color: #aaa; }
